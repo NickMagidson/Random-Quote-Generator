@@ -44,17 +44,13 @@ let quotes = [
  * `getRandomQuote` function
 ***/
 function getRandomQuote() {
-  // Get quote form array
+  // Get quote from array
   let random = Math.round(Math.random() * (quotes.length));
   let gen = quotes[random];
-  //console.log(gen);
   return gen;
-  
-
 }
 
-
-// A print function
+// A print function to to build later on.
 let message;
 function print(message) {     
   var outputDiv = document.getElementById('quote-box');
