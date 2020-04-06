@@ -10,10 +10,10 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
-let quotes = [
+const quotes = [
   {
       quote: 'It does not matter how slowly you go so long as you do not stop.',
-      source: 'Confucius',
+      source: 'Confucius'
      },
   {
       quote: 'Imagination is the only weapon in the war with reality.',
@@ -23,7 +23,7 @@ let quotes = [
   },
   {
       quote: "This is how you do it: you sit down at the keyboard and you put one word after another until its done. It's that easy, and that hard.",
-      source: 'Neil Gaiman',
+      source: 'Neil Gaiman'
   },
   {
       quote: 'We do not simply live in this universe. The universe lives within us.',
@@ -50,10 +50,10 @@ function getRandomQuote() {
   return gen;
 }
 
-// A print function to to build later on.
+// A basic printing function for HTML
 let message;
 function print(message) {     
-  var outputDiv = document.getElementById('quote-box');
+  let outputDiv = document.getElementById('quote-box');
   outputDiv.innerHTML = message;
 }               
 
@@ -61,8 +61,8 @@ function print(message) {
  * `printQuote` function
 ***/
 function printQuote() {
-  let getQuote = getRandomQuote();
-  message += '<p class="quote">' + getQuote.quote + '</p>';
+  let getQuote = getRandomQuote(); // Stores the quote generator.
+  let message = '<p class="quote">' + getQuote.quote + '</p>'; // Stores the HTML strings.
   message += '<p class="source">' + getQuote.source; 
   if (getQuote.citation !== undefined) {
     message += '<p><span class="citation">' + getQuote.citation + '</span></p>';
