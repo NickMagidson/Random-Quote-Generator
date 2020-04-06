@@ -72,7 +72,7 @@ function printQuote() {
   }
   message += '</p>';
   print(message);
-  message = '';
+  message = ''; // Throws the built up HTML into a space.
   return message;
 };
 
