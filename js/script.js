@@ -74,7 +74,8 @@ function printQuote() {
   print(message);
   message = '';
   return message;
-}
+};
+
 
 /***
  * click event listener for the print quote button
