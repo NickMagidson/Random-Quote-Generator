@@ -65,10 +65,10 @@ function printQuote() {
   let message = '<p class="quote">' + getQuote.quote + '</p>'; // Stores the HTML strings.
   message += '<p class="source">' + getQuote.source; 
   if (getQuote.citation !== undefined) {
-    message += '<p><span class="citation">' + getQuote.citation + '</span></p>';
+    message += '<span class="citation"> ' + getQuote.citation + '</span>';
   } 
   if (getQuote.year !== undefined) {
-    message += '<p><span class="year">' + getQuote.year + '</span></p>';
+    message += '<span class="year"> ' + getQuote.year + '</span>';
   }
   message += '</p>';
   print(message);
