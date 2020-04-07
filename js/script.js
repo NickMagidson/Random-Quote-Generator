@@ -45,13 +45,13 @@ const quotes = [
 ***/
 function getRandomQuote() {
   // Get quote from array
-  let random = Math.round(Math.random() * (quotes.length));
+  let random = Math.floor(Math.random() * (quotes.length));
   let gen = quotes[random];
   return gen;
 }
 
 // A basic printing function for HTML
-let message;
+
 function print(message) {     
   let outputDiv = document.getElementById('quote-box');
   outputDiv.innerHTML = message;
